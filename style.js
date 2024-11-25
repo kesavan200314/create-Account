@@ -7,7 +7,8 @@ form.addEventListener('submit', e => {
     e.preventDefault();    validateInputs();
 });const setError = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');    errorDisplay.innerText = message;
+    const errorDisplay = inputControl.querySelector('.error');   
+    errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success')
 }
